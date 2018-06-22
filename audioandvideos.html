@@ -1,18 +1,20 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-	<title>Videos</title>
-	<link rel="stylesheet" href="/css/style.css" type="text/css" />
+	<title>"We are The Monkees"</title>
 	<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="/css/style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+	<link rel="icon" href="/images/favicon.ico" type="image/png" />
+<link rel="shortcut icon" href="/favicon.ico" />
 	</head>
-	
 	<body>
-	  <nav class="navbar navbar-inverse">
+	  <nav id="navbar" class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -20,12 +22,10 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#">Monkees website</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="history.html">History</a></li>
         <li><a href="discography.html">Discography</a></li>
         <li class="active"><a href="audioandvideos.html">Media</a></li>
         <li><a href="events.html">Events</a></li>
@@ -33,10 +33,13 @@
     </div>
   </div>
 </nav>
-
+<div id="mainBody">
+  <div id="audVidTexTop">
+  <h1>Audio and Video Tracks</h1>
 	  <p>Obviously, the best way to appreciate a band's music is to listen to some tracks of its music.
 	  Below it is possible to hear: Last Train to Clarksville, the Monkees's first single; Daydream Believer,
 	  a single which was released in 1968; and I'm A Believer,  a single which was released in 1966</p>
+	  </div>
 	  <audio controls>
   <source src="../audio/DaydreamBeliever.mp3" type="audio/mpeg">
   Daydream
@@ -53,10 +56,23 @@
   <source src="../audio/ImABeliever.mp3" type="audio/mpeg">
   ImABeliever
   </audio>
+  <div id="audVidTexTop">
 	       <p>Of course, perhaps an even better way is to watch a video of a performance. This video shows a performance of 'Daydream Believer'</p>
-    <video width="320" height="240" controls></iframe>
+	       </div>
+    <center><video width="600" height="400" controls id="audvidVideo"></iframe>
       <source src="../video/TheMonkees.mp4" type="video/mp4">
-      </video>
-  </body>
+      </video></center>
+</div>
+
+<div id="footer">
+	  <img src="/images/socialMediaIcons.jpg" width="150" height="45" alt="social media icons" usemap="#icons">
+	  <map name="icons">
+	      <area shape="circle" coords="0,0,62.5,45" alt="Facebook" href="https://www.facebook.com/TheMonkees/">
+	      <area shape="circle" coords="20,0,60,45" alt="YouTube" href="https://www.youtube.com/watch?v=AZYPlNuljHE&list=PLE1ikzLAnSJxCe4faBCO5y6mVmU0IJVSX&index=2">
+	      <area shape="circle" coords="30,0,150,45" alt="Twitter" href="https://twitter.com/themonkees?lang=en">
+	  </map>
+	  </div>
+	  
+	</body>
 
 </html>
